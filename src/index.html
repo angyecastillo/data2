@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form method="post" name="formulario">
+    <h1 style="text-align:center">Panel de datos Laboratoria</h1>
+    <h2 style="text-align:center">Selecciona la Sede</h2>
+    <table style="width:100%" border = 2 px>
+      <tr>
+        <th><div>
+          <!-- aqui estan las sedes -->
+          <img src = "Peru.png" width="80" height="50"></br>
+          <input type="button" value="LIMA" id="Slima">
+        </div></th>
+        <th><div>
+          <img src = "Mexico.png" width="80" height="50"></br>
+          <input type="button" value="MEXICO" id="Scdmx">
+        </div></th>
+        <th><div>
+          <img src = "Santiago.png" width="80" height="50"></br>
+          <input type="button" value="SANTIAGO" id="Ssan">
+        </div></th>
+      </tr>
+    </table>
+
+    <!-- son las generaciones de lima¨selectores¨ -->
+
+    <table style="width:100%" border = 2 px>
+      <tr>
+      <td width="80" style="text-align:center"><div>
+        <input type="checkbox" name="LTercera" id="terceralim">
+        <label for="terceralim">3a Generación</label>
+      </div><div>
+        <input type="checkbox" name="LCuarta" id="cuartalim">
+        <label for="cuartalim">4a Generación</label>
+      </div><div>
+        <input type="checkbox" value="LQuinta" id="quintalim">
+        <label for="quintalim">5a Generación</label>
+      </div>
+      <div>
+        <input type="button" value="Mostrar" id="lima">
+        <input type="button" value="Reiniciar" id="lreiniciar" onclick="window.location.reload()">
+      </div></td>
+
+      <!-- son las generaciones de Mexico¨selectores¨ -->
+
+      <td width="80" style="text-align:center"><div>
+        <input type="checkbox" value="MTercera" id="terceracdmx">
+        <label for="terceracdmx">3a Generación</label>
+      </div><div>
+        <input type="checkbox" value="MCuarta" id="cuartacdmx">
+        <label for="cuartacdmx">4a Generación</label>
+      </div><div>
+        <input type="checkbox" value="MQuinta" id="quintacdmx">
+        <label for="quintacdmx">5a Generación</label>
+      </div><div>
+        <input type="button" value="Mostrar" id="mexico">
+        <input type="button" value="Reiniciar" id="creiniciar" onclick="window.location.reload()">
+      </div></td>
+      <!-- son las generaciones de Santiago¨selectores¨ -->
+        <td width="83" style="text-align:center"><div>
+          <input type="checkbox" value="STercera" id="tercerasan">
+          <label for="terceramex">3a Generación</label>
+        </div><div>
+          <input type="checkbox" value="SCuarta" id="cuartasan">
+          <label for="cuartamex">4a Generación</label>
+        </div><div>
+          <input type="checkbox" value="SQuinta" id="quintasan">
+          <label for="quintamex">5a Generación</label>
+        </div><div>
+        <input type="button" value="Mostrar" id="santiago"><!-- win.location.reload es con lo que refresco la pantalla¨ -->
+        <input type="button" value="Reiniciar" id="sreiniciar" onclick="window.location.reload()">
+      </div></td>
+    </table>
+    <div>
+         <table style="width:100%" border = 2 px>
+           <tr>
+             <th width = 250>Nombre</th>
+             <th width = 230>Correo</th>
+             <th width = 60>Turno</th>
+             <th width = 70>Progreso</th>
+             <th width = 70>Completado</th>
+           </tr>
+         </table>
+    </div>
+  </div>
+  <div >
+  <div id="resultado"></div>
+  <div id="resultadoDos"></div>
+  </div>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</form>
+  </body>
+</html>
