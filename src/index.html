@@ -4,12 +4,56 @@
   <head>
     <meta charset="utf-8">
     <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <body style="background-color:#F9E79F;">
+</body>
+  <header>
+
+
+    <h1 style="text-align:center">Laboratoria</h1>
+    <h1 style="text-align:center">Data Dashboard</h1>
+
+    <ul>
+      <li><a href="https://zabarca.github.io/cdmx-2018-06-bc-core-am-data-dashboard/src/index.html"target="_blank">Inicio</a></li>
+      <li><a href="#">usuario</a></li>
+      <li><a href="#">sede</a></li>
+      <li><a href="#">Generacion</a></li>
+      <li><a href="#">Estudiantes</a></li>
+    </ul>
+  </header>
+  <!--codigo dos -->
+  <!--es una etiqueta para formulario-->
+    <form>
+  <input type="text" id="name-to-search">
+  <button id="search">Buscar</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mt-3">
+        <table class="table table-striped">
+          <thead class= "thead-dark">
+            <tr>
+              <th scope='row'>#</th>
+              <th>Nombre</th>
+              <th>generacion</th>
+              <th>Correo</th>
+              <th>% progreso</th>
+            </tr>
+            </thead>
+            <tbody id='table-body'>
+
+        </thead>
+          </tbody>
+      </table>
+          <div id='no-result'></div>
+    </div>
+    </div>
+  </div>
+  </form>
+  <!-- fin codigo dos-->
     <form method="post" name="formulario">
-    <h1 style="text-align:center">Panel de datos Laboratoria</h1>
-    <h2 style="text-align:center">Selecciona la Sede</h2>
     <table style="width:100%" border = 2 px>
       <tr>
         <th><div>
@@ -89,12 +133,16 @@
          </table>
     </div>
   </div>
+
   <div >
   <div id="resultado"></div>
   <div id="resultadoDos"></div>
   </div>
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <script>
+      getData();
+    </script>
 </form>
   </body>
 </html>

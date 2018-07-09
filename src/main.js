@@ -40,3 +40,31 @@ function deslimaycdmx(){
 function cargartabla() {
 data.cargandoDatos();
 }
+//codigo dos
+const printInf = students =>{
+  //console.log(students);
+}
+const printSerch = student =>{
+  document.getElementById('search').addEventListener('click',(event) =>{
+    event.preventDefault();
+        const name = document.getElementById('name-to-search').value;
+        const searchResult = filtrerStudet(student,name);
+    //para imprrimir en el dom
+    console.log(searchResult);
+    let result = '';
+    if (searchResult.length ===0){
+      document.getElementById('no_result').innerHTML = '<p>no existe alumna</p>';
+    }
+    searchResult.forEach((element , i) => {
+      result +=`<tr>
+        <th scope= row>${i+1}</th>
+        <td>${element.name}</td>
+        <td>${element.generacion}</td>
+        <td>${element.email}</td>
+        <td>${element.stats.completedPerentage}</td>
+      </tr>`
+    })
+    document.getElementById('no-result').innerHTML = '';
+    document.getElementById('table-body').innerHTML = result;
+  })
+}
