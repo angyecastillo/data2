@@ -267,8 +267,8 @@ window.data = {
       const students = computeStudentStas(result);
       printInf(students);
       printSerch(students);
-      // aqui le estoy diciendo a compustuden que es funcion gobal
-      // que me la traiga y yo la renombro en vez de resul la pongo como laboratoria
+      // aqui le estoy diciendo a compustuden que es mi funcion gobal
+      // que me la traiga asi k la renombro en vez de resul la pongo como laboratoria
     })
   }
   window.addstats = progress =>{

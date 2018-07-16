@@ -1,0 +1,13 @@
+div{
+  margin: 300px;
+  width: 150%;
+  max-width: 500px;
+  max-height: 900px;
+  background: #F3F3F3;
+  padding: 450px;
+  border: 30px solid rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+.botoninicio{
+  align-items: center;
+}

@@ -16,6 +16,17 @@ document.getElementById('lima').addEventListener("click",cargartabla);
 document.getElementById('mexico').addEventListener("click",cargartabla);
 document.getElementById('santiago').addEventListener("click",cargartabla);
 
+document.getElementById("tablageneracion").style.display = "none";
+function mostrargen(){
+  document.getElementById("tablaestudiante").style.display = "none";
+  document.getElementById("tablageneracion").style.display = "block";
+}
+
+document.getElementById("tablaestudiante").style.display = "none";
+function mostrarest(){
+  document.getElementById("tablageneracion").style.display = "none";
+  document.getElementById("tablaestudiante").style.display = "block";
+}
 // Crea las funciones de cada sede aqui le digo que al darle clic desabilite las otras dos  ejm  desabilitar cdmx santi
 // función
 
@@ -62,6 +73,8 @@ const printSerch = student =>{
         <td>${element.generacion}</td>
         <td>${element.email}</td>
         <td>${element.stats.completedPerentage}</td>
+        <td>${element.stats.status}</td>
+        <td>${element.turn}</td>
       </tr>`
     })
     document.getElementById('no-result').innerHTML = '';
